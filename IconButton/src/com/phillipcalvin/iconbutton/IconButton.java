@@ -47,7 +47,7 @@ public class IconButton extends Button {
 
     SafeParcelHelper parcel = new SafeParcelHelper("com.phillipcalvin.iconbutton", 
                                                    getContext(), 
-                                                   this.getClass().getPackage());
+                                                   "com.phillipcalvin.iconbutton");
 
     int[] styleable = parcel.getStyleableArray("IconButton");
     TypedArray typedAttrs = getContext().obtainStyledAttributes(attrs,

@@ -32,12 +32,12 @@ public class SafeParcelHelper {
   private Class arrr=null;
   private Map<String, Integer> cache=null;
 
-  public SafeParcelHelper(String id, Context ctxt, Package fallbackPackage) {
+  public SafeParcelHelper(String id, Context ctxt, String fallbackPackage) {
     this.id=id.replace('.','_').replace('-','_');
     String packageName = ctxt.getPackageName();
     // Package name will be null inside the Eclipse/ADT layout tool
     if (null == packageName) {
-      packageName = fallbackPackage.getName();
+      packageName = fallbackPackage;
     }
 
     try {
