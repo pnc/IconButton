@@ -36,7 +36,7 @@ You can assign either a `drawableLeft` or a `drawableRight` to the IconButton.
 IconButton only supports one drawable on the left or right. I'll absolutely accept patches that improve its handling of multiple drawables.
 
 ## License
-Copyright (c) 2012 [Phil Calvin](http://phillipcalvin.com)
+Copyright (c) 2012 [Phil Calvin](http://philcalvin.com)
 
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
