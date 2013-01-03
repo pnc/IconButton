@@ -17,3 +17,5 @@ local.properties
 
 # Eclipse
 .metadata
+
+.DS_Store
