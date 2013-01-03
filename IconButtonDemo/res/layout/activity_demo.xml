@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity" xmlns:app="http://schemas.android.com/apk/res/com.phillipcalvin.iconbuttondemo">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/demo_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/iconButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/action_search"
+        android:text="@string/icon_left" />
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/IconButton01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iconButton1"
+        android:drawableLeft="@drawable/action_search"
+        android:text="@string/icon_left_padding"
+        app:iconPadding="10dp" />
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/iconButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/IconButton01"
+        android:drawableRight="@drawable/action_search"
+        android:text="@string/icon_right" />
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/IconButton02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iconButton2"
+        android:drawableRight="@drawable/action_search"
+        android:text="@string/icon_right_padding"
+        app:iconPadding="10dp" />
+
+</RelativeLayout>
