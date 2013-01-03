@@ -22,7 +22,7 @@ Generate a `local.properties` for IconButton:
 
 Then reference the library from your own `project.properties`:
 
-    android.library.reference.1=../IconButton/IconButton
+    android.library.reference.1=IconButton/IconButton
 
 If you already have library references, change the `1` to the appropriate number.
 
