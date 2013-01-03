@@ -38,11 +38,11 @@ If you already have library references, change the `1` to the appropriate number
     
     <!-- ... -->
     
-    <com.phillipcalvin.iconbutton.IconButton
-            android:id="@+id/search"
-            android:drawableLeft="@drawable/action_search"
-            android:text="@string/search"
-            app:iconPadding="10dp" />
+      <com.phillipcalvin.iconbutton.IconButton
+          android:id="@+id/search"
+          android:drawableLeft="@drawable/action_search"
+          android:text="@string/search"
+          app:iconPadding="10dp" />
 
 The use of `app:iconPadding` is optional. It allows you to add padding between the drawable and your text.
 
