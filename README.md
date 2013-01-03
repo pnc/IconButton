@@ -12,6 +12,8 @@ The component is a [Library Project](http://developer.android.com/guide/developi
 
 If you're using a modern ADT, just drag the JAR into your project's `libs/` directory and ADT will configure the references automatically. If you build from the command line, just manually place the JAR in your `libs/` directory.
 
+[Download JAR](http://c.philcalvin.com/2l3p1T3y1T0a)
+
 ## When to use
 Use the IconButton class if you want finer control over a button that has both a drawable and text.
 
