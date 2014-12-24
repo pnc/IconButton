@@ -1,17 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.phillipcalvin.iconbutton"
-    android:versionCode="1"
-    android:versionName="0.1" >
+    package="com.phillipcalvin.iconbutton">
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="16" />
-
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-    </application>
+    <application/>
 
 </manifest>
