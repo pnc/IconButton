@@ -45,17 +45,10 @@ public class IconButton extends Button {
             bounds = new Rect();
         }
 
-        SafeParcelHelper parcel = new SafeParcelHelper("com.phillipcalvin.iconbutton",
-                getContext(),
-                "com.phillipcalvin.iconbutton");
-
-        int[] styleable = parcel.getStyleableArray("IconButton");
-        TypedArray typedAttrs = getContext().obtainStyledAttributes(attrs,
-                styleable,
-                0, 0);
-        int paddingId = parcel.getStyleableId("IconButton", "iconPadding");
-        setIconPadding(typedAttrs.getDimensionPixelSize(paddingId, 0));
-        typedAttrs.recycle();
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.IconButton);
+        int paddingId = typedArray.getDimensionPixelSize(R.styleable.IconButton_iconPadding, 0);
+        setIconPadding(paddingId);
+        typedArray.recycle();
     }
 
     public void setIconPadding(int padding) {
