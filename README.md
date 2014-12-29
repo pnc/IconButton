@@ -4,7 +4,7 @@ IconButton is an Android button widget that allows you to center both the button
 
 Android's stock `Button` class allows you to assign a `Drawable` to the left, right, top, or bottom of a button, but it looks bad if you need to have the button fill the screen:
 
-![Default Android Button Behavior](https://github.com/msdx/IconButton/raw/master/images/default_behavior.png "Default Android Button Behavior")
+![Default Android Button Behavior](images/default_behavior.png "Default Android Button Behavior")
 
 The component is a [Library Project](http://developer.android.com/guide/developing/eclipse-adt.html#libraryProject). This means that there's no need to copy-paste resources into your own project, simply add the cloned repository as a library reference.
 
@@ -50,14 +50,14 @@ Change the text `your.project.package` to your own project's package. You don't 
 
 You can assign either a `drawableLeft` or a `drawableRight` to the IconButton.
 
-<img src="https://github.com/msdx/IconButton/raw/master/images/demo.png" width="360" alt="Preview of icon button in several different configurations">
+![Preview of icon button in several different configurations](images/demo.png "Preview of icon button in several different configurations")
 
 ### Caveats
 
 IconButton only supports one drawable on the left or right. I'll absolutely accept patches that improve its handling of multiple drawables.
 
 ## License
-Copyright (c) 2012 [Phil Calvin](http://philcalvin.com)
+Copyright (c) 2012-2014 [Phil Calvin](http://philcalvin.com)
 
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
