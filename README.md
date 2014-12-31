@@ -33,9 +33,7 @@ If you already have library references, change the `1` to the appropriate number
 build.gradle
 
     repositories {
-        maven {
-            url 'http://dl.bintray.com/msdx/maven'
-        }
+        jcenter()
     }
 
     dependencies {

@@ -24,6 +24,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':library')
+    //compile project(':library') // use the follow declare way
+    compile 'com.githang:iconbutton:1.0@aar'
     compile 'com.android.support:support-v4:21.0.3'
 }
