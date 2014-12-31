@@ -6,9 +6,21 @@ Android's stock `Button` class allows you to assign a `Drawable` to the left, ri
 
 ![Default Android Button Behavior](images/default_behavior.png "Default Android Button Behavior")
 
-The component is a [Library Project](http://developer.android.com/guide/developing/eclipse-adt.html#libraryProject). This means that there's no need to copy-paste resources into your own project, simply add the cloned repository as a library reference.
-
 ## Installation
+
+### For Gradle / Android Studio
+
+Make sure you declare the JCenter repository in your project's `build.gradle`:
+
+    repositories {
+        jcenter()
+    }
+
+Then add a compile-time dependency on this library, adding the `dependencies` section to `build.gradle` if it doesn't already exist:
+
+    dependencies {
+        compile 'com.githang:iconbutton:1.0@aar'
+    }
 
 ### For Old Version
 
@@ -27,19 +39,6 @@ Then reference the library from your own `project.properties`:
     android.library.reference.1=IconButton/IconButton
 
 If you already have library references, change the `1` to the appropriate number.
-
-### For Android Studio
-
-build.gradle
-
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        compile 'com.githang:iconbutton:1.0@aar'
-    }
-
 
 ## Usage
 
