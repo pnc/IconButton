@@ -10,6 +10,8 @@ The component is a [Library Project](http://developer.android.com/guide/developi
 
 ## Installation
 
+### For Old Version
+
 If you're using ADT, clone this repository and import it into your workspace using File - Import. Then add it to your project by right-clicking your project, selecting Properties, then Android, and adding IconButton in the references list at the bottom of the Properties window.
 
 If you're not using ADT, I recommend using this library as a submodule:
@@ -25,6 +27,21 @@ Then reference the library from your own `project.properties`:
     android.library.reference.1=IconButton/IconButton
 
 If you already have library references, change the `1` to the appropriate number.
+
+### For Android Studio
+
+build.gradle
+
+    repositories {
+        maven {
+            url 'http://dl.bintray.com/msdx/maven'
+        }
+    }
+
+    dependencies {
+        compile 'com.githang:iconbutton:1.0@aar'
+    }
+
 
 ## Usage
 
