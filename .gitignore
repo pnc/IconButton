@@ -19,3 +19,11 @@ local.properties
 .metadata
 
 .DS_Store
+
+# Idea
+.gradle
+*.iml
+.idea/
+
+# Gradle
+build/

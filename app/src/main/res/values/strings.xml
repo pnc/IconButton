@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IconButton</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+
+    <string name="demo_title">IconButton Demo</string>
+    <string name="icon_left">Left Icon</string>
+    <string name="icon_left_padding">Left Icon, 10dp Padding</string>
+    <string name="icon_right">Right Icon</string>
+    <string name="icon_right_padding">Right Icon, 10dp Padding</string>
+</resources>
