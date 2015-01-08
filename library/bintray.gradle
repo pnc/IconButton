@@ -50,7 +50,7 @@ def pomConfig = {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifactId PROJ_NAME
+            artifactId PROJ_ARTIFACTID
 
             artifact androidSourcesJar
             artifact androidJavadocsJar
