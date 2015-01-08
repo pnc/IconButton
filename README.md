@@ -70,8 +70,12 @@ You can assign either a `drawableLeft` or a `drawableRight` to the IconButton.
 
 IconButton only supports one drawable on the left or right. I'll absolutely accept patches that improve its handling of multiple drawables.
 
+## Contributors
+
+Special thanks to [@msdx](https://github.com/msdx) for significant contributions around Android Studio and Gradle support.
+
 ## License
-Copyright (c) 2012-2015 [Phil Calvin](http://philcalvin.com)
+Copyright (c) 2012-2015 [Phil Calvin](http://philcalvin.com) and contributors.
 
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
