@@ -1,5 +1,6 @@
 # IconButton for Android
 [![Build Status](https://travis-ci.org/msdx/IconButton.png)](https://travis-ci.org/msdx/IconButton)
+[ ![Download](https://api.bintray.com/packages/msdx/maven/iconbutton/images/download.svg) ](https://bintray.com/msdx/maven/iconbutton/_latestVersion)
 
 IconButton is an Android button widget that allows you to center both the button's text and an icon.
 
