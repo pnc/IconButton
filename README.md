@@ -1,4 +1,6 @@
 # IconButton for Android
+[![Build Status](https://travis-ci.org/msdx/IconButton.png)](https://travis-ci.org/msdx/IconButton)
+[ ![Download](https://api.bintray.com/packages/msdx/maven/iconbutton/images/download.svg) ](https://bintray.com/msdx/maven/iconbutton/_latestVersion)
 
 IconButton is an Android button widget that allows you to center both the button's text and an icon.
 
@@ -19,7 +21,7 @@ Make sure you declare the JCenter repository in your project's `build.gradle`:
 Then add a compile-time dependency on this library, adding the `dependencies` section to `build.gradle` if it doesn't already exist:
 
     dependencies {
-        compile 'com.githang:com-phillipcalvin-iconbutton:1.0.1@aar'
+        compile 'com.githang:com-phillipcalvin-iconbutton:1.0.2'
     }
 
 ### For Old Version

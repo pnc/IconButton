@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="iconPadding" format="dimension"/>
     <declare-styleable name="IconButton">
-        <attr name="iconPadding" format="dimension"/>
+        <attr name="iconPadding"/>
     </declare-styleable>
 </resources>
