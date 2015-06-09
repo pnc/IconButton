@@ -52,4 +52,14 @@
         android:drawableRight="@drawable/action_search"
         app:iconPadding="10dp"
         />
+
+    <com.phillipcalvin.iconbutton.IconButton
+        android:id="@+id/IconButton05"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/icon_both"
+        android:drawableLeft="@drawable/action_search"
+        android:drawableRight="@drawable/action_search"
+        app:iconPadding="10dp"
+        />
 </LinearLayout>
