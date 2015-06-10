@@ -18,6 +18,7 @@ public class IconButton extends Button {
 
     private enum DrawablePositions {
         NONE,
+        LEFT_AND_RIGHT,
         LEFT,
         RIGHT
     }
@@ -65,34 +66,47 @@ public class IconButton extends Button {
         textPaint.getTextBounds(text, 0, text.length(), bounds);
 
         int textWidth = bounds.width();
-        int contentWidth = drawableWidth + iconPadding + textWidth;
+        int factor = (drawablePosition == DrawablePositions.LEFT_AND_RIGHT) ? 2 : 1;
+        int contentWidth = drawableWidth + iconPadding * factor + textWidth;
+        int horizontalPadding = (int) ((getWidth() / 2.0) - (contentWidth / 2.0));
 
-        int contentLeft = (int) ((getWidth() / 2.0) - (contentWidth / 2.0));
-        setCompoundDrawablePadding(-contentLeft + iconPadding);
+        setCompoundDrawablePadding(-horizontalPadding + iconPadding);
+
         switch (drawablePosition) {
             case LEFT:
-                setPadding(contentLeft, 0, 0, 0);
+                setPadding(horizontalPadding, getPaddingTop(), 0, getPaddingBottom());
                 break;
+
             case RIGHT:
-                setPadding(0, 0, contentLeft, 0);
+                setPadding(0, getPaddingTop(), horizontalPadding, getPaddingBottom());
                 break;
+
+            case LEFT_AND_RIGHT:
+                setPadding(horizontalPadding, getPaddingTop(), horizontalPadding, getPaddingBottom());
+                break;
+
             default:
-                setPadding(0, 0, 0, 0);
+                setPadding(0, getPaddingTop(), 0, getPaddingBottom());
         }
     }
 
     @Override
     public void setCompoundDrawablesWithIntrinsicBounds(Drawable left, Drawable top, Drawable right, Drawable bottom) {
         super.setCompoundDrawablesWithIntrinsicBounds(left, top, right, bottom);
-        if (null != left) {
+
+        if (left != null && right != null) {
+            drawableWidth = left.getIntrinsicWidth() + right.getIntrinsicWidth();
+            drawablePosition = DrawablePositions.LEFT_AND_RIGHT;
+        } else if (left != null) {
             drawableWidth = left.getIntrinsicWidth();
             drawablePosition = DrawablePositions.LEFT;
-        } else if (null != right) {
+        } else if (right != null) {
             drawableWidth = right.getIntrinsicWidth();
             drawablePosition = DrawablePositions.RIGHT;
         } else {
             drawablePosition = DrawablePositions.NONE;
         }
+
         requestLayout();
     }
 }

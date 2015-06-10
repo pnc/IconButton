@@ -49,9 +49,9 @@ If you already have library references, change the `1` to the appropriate number
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-    
+
     <!-- ... -->
-    
+
       <com.phillipcalvin.iconbutton.IconButton
           android:id="@+id/search"
           android:drawableLeft="@drawable/action_search"
@@ -72,7 +72,10 @@ IconButton only supports one drawable on the left or right. I'll absolutely acce
 
 ## Contributors
 
-Special thanks to [@msdx](https://github.com/msdx) for significant contributions around Android Studio and Gradle support.
+Special thanks to:
+
+* [@msdx](https://github.com/msdx) for significant contributions around Android Studio and Gradle support.
+* [@kaushikgopal](https://twitter.com/kaushikgopal) for adding left and right drawable support
 
 ## License
 Copyright (c) 2012-2015 [Phil Calvin](http://philcalvin.com) and contributors.

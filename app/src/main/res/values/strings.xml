@@ -11,5 +11,6 @@
     <string name="icon_left_padding">Left Icon, 10dp Padding</string>
     <string name="icon_right">Right Icon</string>
     <string name="icon_right_padding">Right Icon, 10dp Padding</string>
-    <string name="icon_both">Left and Right Icons</string>
+    <string name="icon_both">Both sides</string>
+    <string name="icon_both_padding">Both sides, 10dp Padding</string>
 </resources>
