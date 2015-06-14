@@ -8,6 +8,7 @@ buildscript {
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 21
@@ -35,4 +36,4 @@ dependencies {
 }
 
 // this script was used to upload files to bintray.
-//apply from: 'bintray.gradle'
+apply from: 'bintray.gradle'
