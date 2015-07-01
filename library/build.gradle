@@ -36,4 +36,4 @@ dependencies {
 }
 
 // this script was used to upload files to bintray.
-apply from: 'https://raw.githubusercontent.com/msdx/gradle-publish/master/bintray.gradle'
+apply from: 'bintray.gradle'
