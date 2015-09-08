@@ -12,15 +12,19 @@ Android's stock `Button` class allows you to assign a `Drawable` to the left, ri
 
 Make sure you declare the JCenter repository in your project's `build.gradle`:
 
-    repositories {
-        jcenter()
-    }
+``` groovy
+repositories {
+    jcenter()
+}
+```
 
 Then add a compile-time dependency on this library, adding the `dependencies` section to `build.gradle` if it doesn't already exist:
 
-    dependencies {
-        compile 'com.githang:com-phillipcalvin-iconbutton:1.0.1@aar'
-    }
+``` groovy
+dependencies {
+    compile 'com.githang:com-phillipcalvin-iconbutton:1.0.1@aar'
+}
+```
 
 ### For Old Version
 
@@ -28,15 +32,21 @@ If you're using ADT, clone this repository and import it into your workspace usi
 
 If you're not using ADT, I recommend using this library as a submodule:
 
-    git submodule add git@github.com:pnc/IconButton.git
+``` bash
+git submodule add git@github.com:pnc/IconButton.git
+```
 
 Generate a `local.properties` for IconButton:
 
-    android update project -n IconButton --path IconButton/IconButton
+``` bash
+android update project -n IconButton --path IconButton/IconButton
+```
 
 Then reference the library from your own `project.properties`:
 
-    android.library.reference.1=IconButton/IconButton
+``` properties
+android.library.reference.1=IconButton/IconButton
+```
 
 If you already have library references, change the `1` to the appropriate number.
 
@@ -44,19 +54,21 @@ If you already have library references, change the `1` to the appropriate number
 
 ### In your layout
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res/your.project.package"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+``` xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/your.project.package"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
 
-    <!-- ... -->
+<!-- ... -->
 
-      <com.phillipcalvin.iconbutton.IconButton
-          android:id="@+id/search"
-          android:drawableLeft="@drawable/action_search"
-          android:text="@string/search"
-          app:iconPadding="10dp" />
+  <com.phillipcalvin.iconbutton.IconButton
+      android:id="@+id/search"
+      android:drawableLeft="@drawable/action_search"
+      android:text="@string/search"
+      app:iconPadding="10dp" />
+```
 
 The use of `app:iconPadding` is optional. It allows you to add padding between the drawable and your text.
 
